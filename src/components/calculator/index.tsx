@@ -22,13 +22,13 @@ export default class Calculator extends React.Component<IState>{
         this.setState({
             response: response.data.rates.EUR
         })
-        console.log(this.state.response)
     }
 
     makeSelection = (event: { target: { name: any; value: any; }; }) => {
         this.setState({
             [event.target.name]: event.target.value
-        }, this.recalculate)
+        }, this.recalculate);
+        this.loadRates(this.state.base);
     }
 
     changeValue = (event: { target: { value: any; }; }) => {
