@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sicredi/styles": "^1.1.1",
+    "@sicredi/assets": "^1.1.1",
+    "@sicredi/styles": "^1.1.2",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/react": "^5.3.13",
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,6 +16,7 @@
     "@types/react-dom": "^16.9.0",
     "axios": "^0.19.2",
     "clsx": "^1.1.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.4.0",
@@ -25,6 +27,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "moduleNameMapper": {
+    "^.+\\.(css|scss|sass)$": "identity-obj-proxy",
+    "^.+\\.(svg)$": "<rootDir>/.jest/svgMock.js"
   },
   "eslintConfig": {
     "extends": "react-app"

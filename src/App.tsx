@@ -1,9 +1,9 @@
 import React from 'react';
-import Exchange from './pages/exchange'
+import Exchange from './pages/exchange';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
       <Exchange/>
     </div>
   );

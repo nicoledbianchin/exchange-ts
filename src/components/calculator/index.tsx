@@ -1,5 +1,5 @@
 import React from 'react';
-import api from '../../services/source/api'
+import api from '../../services/source/api';
 
 export interface IState {
     base?: string;
@@ -55,7 +55,7 @@ export default class Calculator extends React.Component<IState>{
                     <select onChange={this.makeSelection} name="base" value={this.state.base}>
                         {this.state.currencies.map(currency => <option key={currency} value={currency}>{currency}</option>)}
                     </select>
-                    <input onChange={this.changeValue} value={this.state.value}/>
+                    <input type='number' onChange={this.changeValue} value={this.state.value}/>
                 </div>
 
                 <div>
